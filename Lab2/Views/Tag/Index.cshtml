@@ -1,0 +1,15 @@
+﻿@model List<Lab2.Models.Tag>
+
+<h1>Lista Tagów</h1>
+<p>
+    <a class="list-group-item list-group-item-dark" asp-controller="Tag" asp-action="Add">Dodaj tag</a>
+    <ul class="list-group list-group-flush">
+        @foreach (var tag in Model)
+        {
+            <li class="list-group-item list-group-dark">
+                Identyfikator kategorii: @tag.TagId
+                Nazwa kategorii: @tag.Name
+            </li>
+        }
+    </ul>
+</p>

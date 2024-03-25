@@ -1,0 +1,17 @@
+﻿@model List<Lab2.Models.League>
+
+<h1>Lista Lig</h1>
+<p>
+    <a class="list-group-item list-group-item-dark" asp-controller="League" asp-action="Add">Dodaj lige</a>
+    <ul class="list-group list-group-flush">
+        @foreach (var league in Model)
+        {
+            <li class="list-group-item list-group-dark">
+                Identyfikator kategorii: @league.LeagueId
+                Nazwa ligi: @league.Name
+                Kraj ligi: @league.Country
+                Poziom ligi: @league.Level
+            </li>
+        }
+    </ul>
+</p>

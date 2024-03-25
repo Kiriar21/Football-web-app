@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Lab2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Lab2.props",
+      "PackagePath": "build\\Lab2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Lab2.props",
+      "PackagePath": "buildMultiTargeting\\Lab2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Lab2.props",
+      "PackagePath": "buildTransitive\\Lab2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

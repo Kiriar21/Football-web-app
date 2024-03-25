@@ -1,0 +1,11 @@
+﻿@model Lab2.Models.Article
+@{
+    <h1>@Model.Title</h1>
+    <div>
+        <span class="text-italic">Data Utworzenia:</span>
+        <span class="fw-bold">@Model.CreationDate.ToShortDateString()</span>
+    </div>
+    <p class="fw-light">
+        @Model.Content
+    </p>
+}

@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "HzOkt/Zwk/xtANHOr2zwz70CBup1bi0boXtTtEuGHos=",
+  "Source": "Lab2",
+  "BasePath": "_content/Lab2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Lab2\\wwwroot",
+      "Source": "Lab2",
+      "ContentRoot": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\wwwroot\\",
+      "BasePath": "_content/Lab2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\wwwroot\\css\\site.css",
+      "SourceId": "Lab2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\wwwroot\\",
+      "BasePath": "_content/Lab2",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ]
+}

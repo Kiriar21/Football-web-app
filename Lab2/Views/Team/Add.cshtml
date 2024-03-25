@@ -1,0 +1,31 @@
+﻿@model Lab2.Models.Team
+
+@{
+}
+
+    <h1>Dodawanie nowej drużyny</h1>
+    <form asp-action="Added" method="post">
+        <p>
+            <label asp-for="Name">Nazwa</label>
+            <input asp-for="Name" type="text" name="Name" id="Name" />
+        </p>
+        <p>
+            <label for="Country">Kraj</label>
+            <input type="text" name="Country" id="Country" />
+        </p>
+        <p>
+            <label for="City">Miasto</label>
+            <input type="text" name="City" id="City" />
+        </p>
+        <p>
+            <label asp-for="FoundingDate">Data utworzenia</label>
+            <input type="datetime-local" name="FoundingDate" id="FoundingDate" />
+        </p>
+        <p>
+        <label for="leagueId">Wybierz Lige</label>
+        <select asp-for="LeagueId" asp-items="@ViewBag.leagues"></select>
+        </p>
+        <p>
+            <input type="submit" value="Dodaj druzyne" />
+        </p>
+    </form>

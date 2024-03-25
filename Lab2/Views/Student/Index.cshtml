@@ -1,0 +1,14 @@
+﻿@model List<Lab2.Models.Student>
+@{
+    <h1>Lista Studentów </h1>
+    <p>
+        <ul class="list-group list-group-flush">
+       @foreach (var student in Model)
+        {
+            <li class="list-group-item list-group-item-dark">
+                <a class="list-group-item list-group-item-dark" asp-controller="student" asp-action="details" asp-route-id=@student.Id> @student.Id. @student.Imie @student.Nazwisko</a>
+            </li>
+        }
+       </ul>
+    </p>
+}

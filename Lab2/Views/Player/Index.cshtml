@@ -1,0 +1,28 @@
+﻿@model List<Lab2.Models.Player>;
+
+<a asp-action="Add">Dodaj zawodnika</a>
+<h1>Lista zawodników</h1>
+<p>
+    <ul>
+        @{
+            foreach (var player in Model)
+            {
+                <li>
+                    Imie: @player.FIrstName
+                    Nazwisko: @player.LastName
+                    Kraj: @player.Country
+                    Data urodzenia: @player.BirthDate
+                    Klub: @player.Team.Name
+                    Pozycje: 
+                    @{
+                        foreach (var pos in @player.Positions)
+                        {
+                            <p>@pos.Name</p>
+                        } 
+                    }
+                </li>
+            }
+
+        }
+    </ul>
+</p>

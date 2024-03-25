@@ -1,0 +1,29 @@
+﻿*{
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    padding: 3vh 0vh;
+}
+main li {
+    padding: 3vh 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+main li a {
+    width: 50vw !important;
+    text-align: center;
+}

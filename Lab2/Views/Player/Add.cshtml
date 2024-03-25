@@ -1,0 +1,32 @@
+﻿@model Lab2.Models.Player
+
+<h1>Dodawanie nowego zawodnika</h1>
+<form action="Added" method="post">
+    <p>
+        <label asp-for="FIrstName">Imie </label>
+        <input type="text" name="FIrstName" id="FIrstName" />
+    </p>
+    <p>
+        <label asp-for="LastName">Nazwisko</label>
+        <input type="text" name="LastName" id="LastName" />
+    </p>
+    <p>
+        <label asp-for="Country">Kraj</label>
+        <input type="text" name="Country" id="Country" />
+    </p>
+    <p>
+        <label asp-for="BirthDate">Data urodzenia </label>
+        <input type="datetime-local" name="BirthDate" id="BirthDate" />
+    </p>
+    <p>
+        <label asp-for="TeamId">Klub</label>
+        <select asp-for="TeamId" asp-items="@ViewBag.Teams"></select>
+    </p>
+    <p>
+        <label asp-for="Positions">Pozycje</label>
+        <select asp-for="Positions" name="Positions" asp-items="@ViewBag.Positions" multiple></select>
+    </p>
+    <p>
+        <input type="submit" value="Dodaj zawodnika" />
+    </p>
+</form>

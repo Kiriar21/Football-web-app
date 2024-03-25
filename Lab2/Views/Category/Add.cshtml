@@ -1,0 +1,12 @@
+﻿@{
+}
+<h1>Dodawanie nowej kategorii</h1>
+<form asp-controller="Category" asp-action="Added" method="POST">
+    <p>
+        <label for="Name">Nazwa kategorii</label>
+        <input type="text" id="Name" name="Name" />
+    </p>
+    <p>
+        <input type="submit" value="Dodaj kategorie" />
+    </p>
+</form>

@@ -1,0 +1,15 @@
+﻿@model List<Lab2.Models.EventType>
+
+<h1>Lista rodzajów wydarzeń</h1>
+<p>
+    <a class="list-group-item list-group-item-dark" asp-controller="EventType" asp-action="Add">Dodaj rodzaj wydarzenia</a>
+    <ul class="list-group list-group-flush">
+        @foreach (var type in Model)
+        {
+            <li class="list-group-item list-group-dark">
+                Identyfikator rodzaju wydarzenia: @type.EventTypeId
+                Nazwa rodzaju wydarzenia: @type.Name
+            </li>
+        }
+    </ul>
+</p>

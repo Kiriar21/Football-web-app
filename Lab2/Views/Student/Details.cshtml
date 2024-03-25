@@ -1,0 +1,9 @@
+﻿@model Lab2.Models.Student
+@{
+    <h1>Index: <strong> @Model.Indeks </strong> </h1>
+    <p>
+        <span class="text-italic">Student:</span> <span class="fw-bold">@Model.Imie @Model.Nazwisko <br /></span>
+        <span class="text-italic">Data urodzenia:</span> <span class="fw-bold">@Model.DataUrodzenia.ToShortDateString() <br /></span>
+        <span class="text-italic">Kierunek studiów:</span> <span class="fw-bold">@Model.Kierunek</span>
+    </p>
+}

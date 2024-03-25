@@ -1,0 +1,19 @@
+﻿@model List<Lab2.Models.Team>
+
+<h1>Lista drużyn</h1>
+<a asp-controller="Team" asp-action="Add">Dodaj drużyne</a>
+<p>
+    <ul>
+        @foreach (var team in Model)
+        {
+            <li>
+                Id: @team.TeamId
+                Nazwa: @team.Name
+                Kraj: @team.Country
+                Miasto: @team.City
+                Data utworzenia: @team.FoundingDate
+                Liga: @team.League.Name (@team.League.Country)
+            </li>
+        }
+    </ul>
+</p>

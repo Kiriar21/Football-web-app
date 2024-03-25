@@ -1,0 +1,151 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab2
+build_property.RootNamespace = Lab2
+build_property.ProjectDir = C:\Users\Kiriar\Desktop\Studia\Semestr 6\Aplikacje WWW\Lab\Lab2-new\Lab2\Lab2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Kiriar\Desktop\Studia\Semestr 6\Aplikacje WWW\Lab\Lab2-new\Lab2\Lab2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Article/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Author/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Author/Added.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEFkZGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Author/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Category/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Category/Added.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/EventType/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/EventType/Added.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlXEFkZGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/EventType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/League/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3VlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/League/Added.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3VlXEFkZGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/League/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3VlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/MatchEvent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hFdmVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/MatchPlayer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hQbGF5ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Match/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Player/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Player/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Position/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Position/Added.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cQWRkZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Position/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Student/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Tag/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Tag/Added.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEFkZGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Tag/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Team/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/Team/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Studia/Semestr 6/Aplikacje WWW/Lab/Lab2-new/Lab2/Lab2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

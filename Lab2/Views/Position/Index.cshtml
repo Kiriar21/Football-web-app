@@ -1,0 +1,15 @@
+﻿@model List<Lab2.Models.Position>
+
+<h1>Lista Pozycji</h1>
+<p>
+    <a class="list-group-item list-group-item-dark" asp-controller="Position" asp-action="Add">Dodaj pozycje</a>
+    <ul class="list-group list-group-flush">
+        @foreach (var position in Model)
+        {
+            <li class="list-group-item list-group-dark">
+                Identyfikator pozycji: @position.PositionId
+                Nazwa pozycji: @position.Name
+            </li>
+        }
+    </ul>
+</p>
