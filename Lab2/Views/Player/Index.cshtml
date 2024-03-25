@@ -8,6 +8,7 @@
             foreach (var player in Model)
             {
                 <li>
+                    Identyfikator: @player.PlayerId
                     Imie: @player.FIrstName
                     Nazwisko: @player.LastName
                     Kraj: @player.Country
@@ -20,6 +21,7 @@
                             <p>@pos.Name</p>
                         } 
                     }
+                    <a class="btn btn-outline-primary" asp-action="Edit" asp-route-PlayerId=@player.PlayerId> Edytuj</a>
                 </li>
             }
 

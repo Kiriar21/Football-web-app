@@ -75,29 +75,71 @@ namespace Lab2.Controllers
 
         public IActionResult Edit(int PlayerId = -1)
         {
-            if (_dbContext.Players.Find(PlayerId) != null)
+            if (_dbContext.Players.FirstOrDefault(x => x.PlayerId == PlayerId) != null)
             {
-                return View(_dbContext.Players.FirstOrDefault(x => x.PlayerId == PlayerId));
+
+                var tempTeams = _dbContext.Teams.ToList();
+                var teams = new List<SelectListItem>();
+                foreach (var team in tempTeams)
+                {
+                    string idTeam = team.TeamId.ToString();
+                    string name = team.Name.ToString();
+                    teams.Add(new SelectListItem(name, idTeam));
+                }
+                ViewBag.Teams = teams;
+
+                var tempPlayer = _dbContext.Players.FirstOrDefault(x => x.PlayerId == PlayerId);
+                var tempPlayerPositions = tempPlayer!.Positions.ToList();
+
+                var tempPositions = _dbContext.Positions;
+                var positions = new List<SelectListItem>();
+                foreach (var position in tempPositions)
+                {
+                    string idPosition = position.PositionId.ToString();
+                    string name = position.Name.ToString();
+                    var selectedItem = new SelectListItem(name, idPosition);
+                    selectedItem.Selected = true;
+
+                    //foreach(var pos in tempPlayerPositions)
+                    //{   
+                    //    if(pos.PositionId == position.PositionId)
+                    //    {
+                    //        selectedItem.Selected = true;
+
+                    //    }
+                    //}
+                    positions.Add(selectedItem);
+                }
+
+                ViewBag.Positions = positions;
+                return View(_dbContext.Players!.FirstOrDefault(x => x.PlayerId == PlayerId));
             } 
             else
             {
-                return View("Add");
+                return RedirectToAction("Index");
             }
+           
         }
         [HttpPost]
-        public IActionResult Edit(Player player)
+        public IActionResult EditUpdate(Player player)
         {
+            
             if(_dbContext.Players.Find(player.PlayerId) != null)
             {
-                var authorTemp = _dbContext.Players.FirstOrDefault(x => x.PlayerId == player.PlayerId);
+                var playerTemp = _dbContext.Players.FirstOrDefault(x => x.PlayerId == player.PlayerId);
 
-                if(authorTemp != null)
+                if(playerTemp != null)
                 {
-                    authorTemp.FIrstName = player.FIrstName;
-                    authorTemp.LastName = player.LastName;
-                    authorTemp.BirthDate = player.BirthDate;
-                    authorTemp.MatchPlayers+
+                    playerTemp.FIrstName = player.FIrstName.ToString();
+                    playerTemp.LastName = player.LastName.ToString();
+                    playerTemp.BirthDate = player.BirthDate;
+                    playerTemp.Country = player.Country.ToString();
+                    playerTemp.TeamId = player.TeamId;
+                    playerTemp.Positions = player.Positions.ToList();
                 }
+                
+                _dbContext.SaveChanges();
+
             }
 
             return RedirectToAction("Index");

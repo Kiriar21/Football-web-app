@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\Lab2.csproj": {}
+    "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Lab2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\Lab2.csproj": {
+    "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\Lab2.csproj",
+        "projectUniqueName": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Lab2.csproj",
         "projectName": "Lab2",
-        "projectPath": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\Lab2.csproj",
+        "projectPath": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Lab2.csproj",
         "packagesPath": "C:\\Users\\Kiriar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\obj\\",
+        "outputPath": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kiriar\\AppData\\Roaming\\NuGet\\NuGet.Config",

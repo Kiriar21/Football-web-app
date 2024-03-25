@@ -1,22 +1,23 @@
 ﻿@model Lab2.Models.Player
 
-<h1>Dodawanie nowego zawodnika</h1>
-<form action="Added" method="post">
+<h1>Edycja zawodnika</h1>
+<form asp-action="EditUpdate" method="post">
+    <input asp-for="PlayerId" type="hidden" />
     <p>
         <label asp-for="FIrstName">Imie </label>
-        <input type="text" name="FIrstName" id="FIrstName" />
+        <input asp-for="FIrstName" />
     </p>
     <p>
         <label asp-for="LastName">Nazwisko</label>
-        <input type="text" name="LastName" id="LastName" />
+        <input asp-for="LastName" />
     </p>
     <p>
         <label asp-for="Country">Kraj</label>
-        <input type="text" name="Country" id="Country" />
+        <input asp-for="Country" />
     </p>
     <p>
         <label asp-for="BirthDate">Data urodzenia </label>
-        <input type="datetime-local" name="BirthDate" id="BirthDate" />
+        <input asp-for="BirthDate" />
     </p>
     <p>
         <label asp-for="TeamId">Klub</label>
@@ -24,9 +25,9 @@
     </p>
     <p>
         <label asp-for="Positions">Pozycje</label>
-        <select asp-for="Positions" selected="1" name="Positions" asp-items="@ViewBag.Positions" multiple></select>
+        <select asp-for="Positions" name="Positions" asp-items="@ViewBag.Positions" multiple></select>
     </p>
     <p>
-        <input type="submit" value="Dodaj zawodnika" />
+        <input type="submit" value="Aktualizuj zawodnika" />
     </p>
 </form>

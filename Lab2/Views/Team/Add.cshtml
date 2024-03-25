@@ -10,19 +10,19 @@
             <input asp-for="Name" type="text" name="Name" id="Name" />
         </p>
         <p>
-            <label for="Country">Kraj</label>
-            <input type="text" name="Country" id="Country" />
+            <label asp-for="Country">Kraj</label>
+        <input type="text" asp-for="Country" name="Country" id="Country" />
         </p>
         <p>
-            <label for="City">Miasto</label>
-            <input type="text" name="City" id="City" />
+            <label asp-for="City">Miasto</label>
+        <input type="text" asp-for="City" name="City" id="City" />
         </p>
         <p>
             <label asp-for="FoundingDate">Data utworzenia</label>
             <input type="datetime-local" name="FoundingDate" id="FoundingDate" />
         </p>
         <p>
-        <label for="leagueId">Wybierz Lige</label>
+        <label asp-for="LeagueId">Wybierz Lige</label>
         <select asp-for="LeagueId" asp-items="@ViewBag.leagues"></select>
         </p>
         <p>

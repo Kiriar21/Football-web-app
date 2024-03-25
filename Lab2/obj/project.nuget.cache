@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3rn/KwVZDfhD6DHPZuF3+npBAaOI5/fRI8AZh3UIZ00BGWmkxbyMQexk7rnu8sqkEIVHVst0dXwDddd7E3FaBA==",
+  "dgSpecHash": "Bct0uDE+uhO0amEif4s8C9VuKFs5lKyAdnGXO7PTGEf6gHzssa2mWkwD+Rn1ZC8gemoaH1hL1pl0l8+cDVxHpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kiriar\\Desktop\\Studia\\Semestr 6\\Aplikacje WWW\\Lab\\Lab2-new\\Lab2\\Lab2\\Lab2.csproj",
+  "projectFilePath": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Lab2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kiriar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Kiriar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
