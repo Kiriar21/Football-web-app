@@ -29,7 +29,7 @@ namespace Lab2.Controllers
             _dbContext.Categories.Add(category);
             _dbContext.SaveChanges();
 
-            return View(category);
+            return RedirectToAction("Index");
         }
     }
 }

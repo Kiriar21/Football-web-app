@@ -2,15 +2,13 @@
 
 <h1>Lista Autorów </h1>
 <p>
-    <a class="list-group-item list-group-item-dark" asp-controller="Author" asp-action="Add">Dodaj Autora</a>
+    <a class="btn btn-outline-success" asp-controller="Author" asp-action="Add">Dodaj Autora</a>
     <ul class="list-group list-group-flush">
         @foreach (var author in Model)
         {
-            <li class="list-group-item list-group-item-dark">
-                Identyfikator Autora: @author.AuthorId.
-                Imie i nazwisko: @author.FirstName @author.LastName
+            <li class="list-group-item list-group-item-dark my-5 w-100">
+                <p><strong>Imie i nazwisko: </strong>@author.FirstName @author.LastName</p>
             </li>
         }
     </ul>
 </p>
-@*                 Lista artykułów: <a class="list-group-item list-group-item-dark" asp-controller="Article" asp-action="Index" asp-route-id=1>Link</a> *@

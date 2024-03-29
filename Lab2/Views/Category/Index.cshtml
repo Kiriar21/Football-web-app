@@ -2,13 +2,12 @@
 
 <h1>Lista Kategorii</h1>
 <p>
-    <a class="list-group-item list-group-item-dark" asp-controller="Category" asp-action="Add">Dodaj kategorie</a>
+    <a class="btn btn-outline-success" asp-controller="Category" asp-action="Add">Dodaj kategorie</a>
     <ul class="list-group list-group-flush">
         @foreach (var category in Model)
         {
-            <li class="list-group-item list-group-dark">
-                   Identyfikator kategorii: @category.CategoryId
-                   Nazwa kategorii: @category.Name
+            <li class="list-group-item list-group-item-dark my-5 w-100">
+                <p><strong>Nazwa kategorii: </strong>@category.Name</p>
             </li>
         }
     </ul>

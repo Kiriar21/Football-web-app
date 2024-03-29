@@ -1,0 +1,29 @@
+﻿@model Lab2.Models.Team
+
+<h1>Zawodnicy @Model.Name </h1>
+<p>
+    <a class="btn btn-outline-primary" asp-action="Index" asp-controller="Team">Powrót</a>
+    <ul class="list-group list-group-flush">
+        @if (Model?.Players != null)
+        {
+            @foreach (var player in Model.Players)
+            {
+                <li class="list-group-item list-group-item-dark my-5 w-100">
+                    <p><strong>Zawodnik: </strong>@player.FIrstName @player.LastName</p>
+                    <p>
+                        <strong>Pozycje: </strong>
+                        @{
+                            foreach (var position in player.Positions)
+                            {
+                                var pos = $" | {position.Name} ";
+                                @pos;
+                            }
+                            var line = "| ";
+                            @line;
+                        }
+                    </p>
+                </li>
+            }
+        }
+    </ul>
+</p>

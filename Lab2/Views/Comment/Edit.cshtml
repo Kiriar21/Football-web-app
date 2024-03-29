@@ -1,0 +1,18 @@
+﻿@model Lab2.Models.Comment
+
+<h1 class="w-50">Edytuj komentarz do artukułu @ViewBag.Article.Title</h1>
+<form asp-action="Edited" method="post">
+    <input name="ArticleId" id="ArticleId" value="@ViewBag.Article.ArticleId" type="hidden" />
+    <input asp-for="CommentId" type="hidden" />
+    <div class="form-group">
+        <label asp-for="Title">Tytuł</label>
+        <input asp-for="Title" class="form-control" id="Title" name="Title" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Content">Treść</label>
+        <input asp-for="Content" class="form-control" id="Content" name="Content" />
+    </div>
+    <div class="text-center my-5">
+        <input type="submit" value="Zapisz" class="btn btn-success" />
+    </div>
+</form>

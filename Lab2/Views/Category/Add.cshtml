@@ -1,12 +1,10 @@
-﻿@{
-}
-<h1>Dodawanie nowej kategorii</h1>
+﻿<h1>Dodawanie nowej kategorii</h1>
 <form asp-controller="Category" asp-action="Added" method="POST">
-    <p>
+    <div class="form-group my-3">
         <label for="Name">Nazwa kategorii</label>
-        <input type="text" id="Name" name="Name" />
-    </p>
-    <p>
-        <input type="submit" value="Dodaj kategorie" />
-    </p>
+        <input type="text" class="form-control" id="Name" name="Name" />
+     </div>
+    <div class="text-center my-5">
+        <input class="btn btn-success" type="submit" value="Dodaj kategorie" />
+     </div>
 </form>

@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\views\\player\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\player\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\views\\player\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\player\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\views\\player\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\player\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\models\\matchevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\models\\matchevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\controllers\\positioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|solutionrelative:lab2\\controllers\\positioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C973FA70-DBD5-4E88-B22F-97D344813E4D}|Lab2\\Lab2.csproj|c:\\users\\kiriar\\desktop\\football-web-app\\lab2\\controllers\\leaguecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,111 +17,33 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 216,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 189,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Views\\Player\\Index.cshtml",
-              "RelativeDocumentMoniker": "Lab2\\Views\\Player\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Views\\Player\\Index.cshtml",
-              "RelativeToolTip": "Lab2\\Views\\Player\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-25T21:50:22.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LeagueController.cs",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\LeagueController.cs",
-              "RelativeDocumentMoniker": "Lab2\\Controllers\\LeagueController.cs",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\LeagueController.cs",
-              "RelativeToolTip": "Lab2\\Controllers\\LeagueController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:30:20.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TeamController.cs",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\TeamController.cs",
-              "RelativeDocumentMoniker": "Lab2\\Controllers\\TeamController.cs",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\TeamController.cs",
-              "RelativeToolTip": "Lab2\\Controllers\\TeamController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAowDkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:16:57.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Views\\Player\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Lab2\\Views\\Player\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Views\\Player\\Edit.cshtml",
-              "RelativeToolTip": "Lab2\\Views\\Player\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-25T20:52:24.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Models\\Player.cs",
-              "RelativeDocumentMoniker": "Lab2\\Models\\Player.cs",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Models\\Player.cs",
-              "RelativeToolTip": "Lab2\\Models\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T20:44:41.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Views\\Player\\Add.cshtml",
-              "RelativeDocumentMoniker": "Lab2\\Views\\Player\\Add.cshtml",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Views\\Player\\Add.cshtml",
-              "RelativeToolTip": "Lab2\\Views\\Player\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-25T17:55:09.709Z",
+              "Title": "PositionController.cs",
+              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\PositionController.cs",
+              "RelativeDocumentMoniker": "Lab2\\Controllers\\PositionController.cs",
+              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\PositionController.cs",
+              "RelativeToolTip": "Lab2\\Controllers\\PositionController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAUwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T19:28:22.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Lab2\\Controllers\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\PlayerController.cs",
-              "RelativeToolTip": "Lab2\\Controllers\\PlayerController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAkwGQAAAAxAAAA",
+              "Title": "LeagueController.cs",
+              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\LeagueController.cs",
+              "RelativeDocumentMoniker": "Lab2\\Controllers\\LeagueController.cs",
+              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Controllers\\LeagueController.cs",
+              "RelativeToolTip": "Lab2\\Controllers\\LeagueController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwC0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T13:23:31.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MatchEvent.cs",
-              "DocumentMoniker": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Models\\MatchEvent.cs",
-              "RelativeDocumentMoniker": "Lab2\\Models\\MatchEvent.cs",
-              "ToolTip": "C:\\Users\\Kiriar\\Desktop\\Football-web-app\\Lab2\\Models\\MatchEvent.cs",
-              "RelativeToolTip": "Lab2\\Models\\MatchEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T13:50:06.296Z",
+              "WhenOpened": "2024-03-29T19:26:35.057Z",
               "EditorCaption": ""
             }
           ]

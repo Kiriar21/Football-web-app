@@ -19,6 +19,7 @@ namespace Lab2.Controllers
         {
             return View();
         }
+        [HttpPost]
         public IActionResult Added(string Name, string Country, int Level)
         {
             League league = new League()
@@ -31,7 +32,17 @@ namespace Lab2.Controllers
             _dbContext.Leagues.Add(league);
             _dbContext.SaveChanges();
 
-            return View(league);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Delete(int id)
+        {
+            var leagueTemp = _dbContext.Leagues.FirstOrDefault(x => x.LeagueId == id);
+            if (leagueTemp != null)
+            {
+                _dbContext.Leagues.Remove(leagueTemp);
+                _dbContext.SaveChanges();
+            }
+            return RedirectToAction("Index");
         }
     }
 }

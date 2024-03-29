@@ -1,11 +1,38 @@
-﻿@model Lab2.Models.Article
-@{
-    <h1>@Model.Title</h1>
-    <div>
-        <span class="text-italic">Data Utworzenia:</span>
-        <span class="fw-bold">@Model.CreationDate.ToShortDateString()</span>
-    </div>
-    <p class="fw-light">
-        @Model.Content
-    </p>
-}
+﻿@model List<Lab2.Models.Article>
+
+<h1>Lista Artykułów </h1>
+<p>
+    <a class="btn btn-outline-success" asp-controller="Article" asp-action="Add">Dodaj Artykuł</a>
+    <ul class="list-group list-group-flush">
+        @foreach (var article in Model)
+        {
+            <li class="list-group-item list-group-item-dark my-5 w-100">
+                <p><strong>Title: </strong>@article.Title</p>
+                <p><strong>Lead: </strong>@article.Lead</p>
+                <p><strong>Creation date: </strong>@article.CreationDate.ToShortDateString()</p>
+                <p><strong>Autor: </strong>@article.Author.FirstName @article.Author.LastName</p>
+                <p><strong>Kategoria: </strong>@article.Category.Name</p>
+                <p>
+                    <strong>Tagi:</strong>
+                    @{
+                        foreach (var tag in article.Tags!)
+                        {
+                            var positionsString = $" | {@tag.Name} ";
+                            @positionsString
+                        }
+                    }
+                    |
+                </p>
+                <p>
+                    <a class="btn btn-warning" asp-action="Show" asp-route-id=@article.ArticleId> Zobacz artykuł</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id=@article.ArticleId> Edytuj</a>
+                </p>
+                <p>
+                    <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id=@article.ArticleId> Usuń</a>
+                </p>
+            </li>
+        }
+    </ul>
+</p>

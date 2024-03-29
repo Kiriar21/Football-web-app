@@ -20,7 +20,7 @@ namespace Lab2.Controllers
         {
             return View();
         }
-
+        [HttpPost]
         public IActionResult Added(string FirstName, string LastName)
         {
 
@@ -33,7 +33,7 @@ namespace Lab2.Controllers
             _dbContext.Authors.Add(author);
             _dbContext.SaveChanges();
 
-            return View(author);
+            return RedirectToAction("Index");
 
         }
     }

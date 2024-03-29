@@ -1,33 +1,45 @@
 ﻿@model Lab2.Models.Player
 
+@{
+    var selectedPositions = Model.Positions.Select(p => p.PositionId).ToHashSet();
+}
+
 <h1>Edycja zawodnika</h1>
 <form asp-action="EditUpdate" method="post">
     <input asp-for="PlayerId" type="hidden" />
-    <p>
+    <div class="form-group my-3">
         <label asp-for="FIrstName">Imie </label>
-        <input asp-for="FIrstName" />
-    </p>
-    <p>
+        <input asp-for="FIrstName" class="form-control" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="LastName">Nazwisko</label>
-        <input asp-for="LastName" />
-    </p>
-    <p>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="Country">Kraj</label>
-        <input asp-for="Country" />
-    </p>
-    <p>
+        <input asp-for="Country" class="form-control" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="BirthDate">Data urodzenia </label>
-        <input asp-for="BirthDate" />
-    </p>
-    <p>
+        <input asp-for="BirthDate" class="form-control" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="TeamId">Klub</label>
-        <select asp-for="TeamId" asp-items="@ViewBag.Teams"></select>
-    </p>
-    <p>
+        <select asp-for="TeamId" class="form-control" asp-items="@ViewBag.Teams"></select>
+    </div>
+    <div class="form-group my-3">
         <label asp-for="Positions">Pozycje</label>
-        <select asp-for="Positions" name="Positions" asp-items="@ViewBag.Positions" multiple></select>
-    </p>
-    <p>
-        <input type="submit" value="Aktualizuj zawodnika" />
-    </p>
+            @{
+                foreach (var item in ViewBag.Positions)
+                {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Positions" value="@item.Value" @((selectedPositions.Contains(int.Parse(item.Value))) ? "checked" : "") />
+                    <label class="form-check-label">@item.Text</label>
+                </div>
+                }
+            }
+    </div>
+    <div class="text-center my-5">
+        <input type="submit" class="btn btn-success" value="Aktualizuj zawodnika" />
+    </div>
 </form>

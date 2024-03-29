@@ -2,13 +2,13 @@
 
 <h1>Lista Pozycji</h1>
 <p>
-    <a class="list-group-item list-group-item-dark" asp-controller="Position" asp-action="Add">Dodaj pozycje</a>
+    <a class="btn btn-outline-success" asp-controller="Position" asp-action="Add">Dodaj pozycje</a>
     <ul class="list-group list-group-flush">
         @foreach (var position in Model)
         {
-            <li class="list-group-item list-group-dark">
-                Identyfikator pozycji: @position.PositionId
-                Nazwa pozycji: @position.Name
+            <li class="list-group-item list-group-item-dark my-5 w-100">
+                <p><strong>Nazwa pozycji: </strong>@position.Name</p>
+                <a class="btn btn-danger" asp-controller="Position" asp-action="Delete" asp-route-id=@position.PositionId>Usuń</a>
             </li>
         }
     </ul>

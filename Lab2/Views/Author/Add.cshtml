@@ -1,17 +1,14 @@
-﻿@{
-    <h1>Dodawanie nowego autora</h1>
-    <form asp-controller="Author" asp-action="Added" method="post">
-        <p>
-            <label for="FirstName">Imie</label>
-            <input type="text" id="FirstName" name="FirstName" />
-        </p>
-        <p>
-            <label for="LastName">Nazwisko</label>
-            <input type="text" id="LastName" name="LastName" />
-        </p> 
-        <p>
-            <input type="submit" value="Dodaj autora" />
-        </p>
-    </form>
-    
-}
+﻿<h1>Dodawanie nowego autora</h1>
+<form asp-controller="Author" asp-action="Added" method="post">
+    <div class="form-group my-3">
+        <label for="FirstName">Imie</label>
+        <input class="form-control" name="FirstName" id="FirstName" type="text" />
+    </div>
+    <div class="form-group my-3">
+        <label for="LastName">Nazwisko</label>
+        <input class="form-control" type="text" id="LastName" name="LastName" />
+    </div>
+    <div class="text-center my-5">
+        <input class="btn btn-success" type="submit" value="Dodaj autora" />
+    </div>
+</form>

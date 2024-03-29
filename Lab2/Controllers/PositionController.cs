@@ -19,6 +19,7 @@ namespace Lab2.Controllers
         {
             return View();
         }
+        [HttpPost]
         public IActionResult Added(string Name)
         {
             Position position = new Position()
@@ -29,7 +30,17 @@ namespace Lab2.Controllers
             _dbContext.Positions.Add(position);
             _dbContext.SaveChanges();
 
-            return View(position);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Delete(int id)
+        {
+            var tempPosition = _dbContext.Positions.FirstOrDefault(x => x.PositionId == id);
+            if (tempPosition != null)
+            {
+                _dbContext.Positions.Remove(tempPosition);
+                _dbContext.SaveChanges();
+            }
+            return RedirectToAction("Index");
         }
     }
 }

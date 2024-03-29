@@ -1,32 +1,40 @@
 ﻿@model Lab2.Models.Player
 
 <h1>Dodawanie nowego zawodnika</h1>
-<form action="Added" method="post">
-    <p>
+<form asp-action="Added" asp-controller="Player" method="post">
+    <div class="form-group my-3">
         <label asp-for="FIrstName">Imie </label>
-        <input type="text" name="FIrstName" id="FIrstName" />
-    </p>
-    <p>
+        <input asp-for="FIrstName" class="form-control" type="text" name="FIrstName" id="FIrstName" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="LastName">Nazwisko</label>
-        <input type="text" name="LastName" id="LastName" />
-    </p>
-    <p>
+        <input asp-for="LastName" class="form-control" type="text" name="LastName" id="LastName" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="Country">Kraj</label>
-        <input type="text" name="Country" id="Country" />
-    </p>
-    <p>
+        <input asp-for="Country" class="form-control" type="text" name="Country" id="Country" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="BirthDate">Data urodzenia </label>
-        <input type="datetime-local" name="BirthDate" id="BirthDate" />
-    </p>
-    <p>
+        <input asp-for="BirthDate" class="form-control" type="datetime-local" name="BirthDate" id="BirthDate" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="TeamId">Klub</label>
-        <select asp-for="TeamId" asp-items="@ViewBag.Teams"></select>
-    </p>
-    <p>
+        <select asp-for="TeamId" class="form-control" asp-items="@ViewBag.Teams"></select>
+    </div>
+    <div class="form-group my-3">
         <label asp-for="Positions">Pozycje</label>
-        <select asp-for="Positions" selected="1" name="Positions" asp-items="@ViewBag.Positions" multiple></select>
-    </p>
-    <p>
-        <input type="submit" value="Dodaj zawodnika" />
-    </p>
+        @{
+            foreach (var item in ViewBag.Positions)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Positions" value="@item.Value" />
+                    <label class="form-check-label">@item.Text</label>
+                </div>
+            }
+        }
+    </div>
+    <div class="text-center my-5">
+        <input class="btn btn-success" type="submit" value="Dodaj zawodnika" />
+    </div>
 </form>

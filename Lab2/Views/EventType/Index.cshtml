@@ -2,13 +2,13 @@
 
 <h1>Lista rodzajów wydarzeń</h1>
 <p>
-    <a class="list-group-item list-group-item-dark" asp-controller="EventType" asp-action="Add">Dodaj rodzaj wydarzenia</a>
+    <a class="btn btn-outline-success" asp-controller="EventType" asp-action="Add">Dodaj rodzaj wydarzenia</a>
     <ul class="list-group list-group-flush">
         @foreach (var type in Model)
         {
-            <li class="list-group-item list-group-dark">
-                Identyfikator rodzaju wydarzenia: @type.EventTypeId
-                Nazwa rodzaju wydarzenia: @type.Name
+            <li class="list-group-item list-group-item-dark my-5 w-100">
+                <p><strong>Nazwa rodzaju wydarzenia: </strong>@type.Name</p>
+
             </li>
         }
     </ul>

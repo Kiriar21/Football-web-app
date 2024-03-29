@@ -2,15 +2,28 @@
 
 <h1>Lista Lig</h1>
 <p>
-    <a class="list-group-item list-group-item-dark" asp-controller="League" asp-action="Add">Dodaj lige</a>
+    <a class="btn btn-outline-success" asp-controller="League" asp-action="Add">Dodaj lige</a>
     <ul class="list-group list-group-flush">
         @foreach (var league in Model)
         {
-            <li class="list-group-item list-group-dark">
-                Identyfikator kategorii: @league.LeagueId
-                Nazwa ligi: @league.Name
-                Kraj ligi: @league.Country
-                Poziom ligi: @league.Level
+            <li class="list-group-item list-group-item-dark my-5 w-100">
+                <p><strong>Nazwa ligi: </strong>@league.Name</p>
+                <p><strong>Kraj ligi: </strong>@league.Country</p>
+                <p><strong>Poziom ligi: </strong>@league.Level</p>
+                <p>Drużyny:</p>
+                <pre>
+                    @if (league?.Teams != null)
+                    {
+                        @foreach (var team in league.Teams)
+                        {
+                            var name = $"| {@team.Name} ";
+                            @name;
+                        }
+                        var name1 = " | ";
+                        @name1;   
+                    }
+                </pre>
+                <a class="btn btn-danger" asp-controller="League" asp-action="Delete" asp-route-id=@league!.LeagueId>Usuń</a>
             </li>
         }
     </ul>

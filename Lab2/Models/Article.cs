@@ -13,17 +13,9 @@
         public virtual Category Category { get; set; } = null!;
         public virtual ICollection<Comment> ?Comments { get; set; }
         public virtual ICollection<Tag> ?Tags { get; set; }
-        public virtual int MatchId { get; set; }
+        public virtual int ?MatchId { get; set; }
         public virtual Match ?Match { get; set; } 
 
-        public Article()
-        {
-            ArticleId = 0;
-            Title = "Nie odnaleziony artykuł";
-            Lead = "Nie wiem co to lead";
-            Content = "";
-            CreationDate = DateTime.Now;
-        }
     }
 
 }

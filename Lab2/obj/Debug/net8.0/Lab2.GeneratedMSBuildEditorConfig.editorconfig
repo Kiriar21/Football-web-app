@@ -18,16 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Kiriar\Desktop\Football-web-app\Lab2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Article/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Article/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Article/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Article/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Author/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEFkZC5jc2h0bWw=
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Article/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Author/Added.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEFkZGVkLmNzaHRtbA==
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Author/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Author/Index.cshtml]
@@ -38,12 +50,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Category/Added.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkZWQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Comment/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Comment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Comment/Index.cshtml]
@@ -52,10 +68,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/EventType/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlXEFkZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/EventType/Added.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlXEFkZGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/EventType/Index.cshtml]
@@ -68,10 +80,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/League/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3VlXEFkZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/League/Added.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZ3VlXEFkZGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/League/Index.cshtml]
@@ -106,10 +114,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Position/Added.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cQWRkZWQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Position/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -130,10 +134,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Tag/Added.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEFkZGVkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Tag/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -142,8 +142,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Team/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Team/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/Team/ShowPlayers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxTaG93UGxheWVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kiriar/Desktop/Football-web-app/Lab2/Views/_ViewImports.cshtml]

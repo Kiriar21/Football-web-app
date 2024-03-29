@@ -29,7 +29,7 @@ namespace Lab2.Controllers
             _dbContext.Tags.Add(tag);
             _dbContext.SaveChanges();
 
-            return View(tag);
+            return RedirectToAction("Index");
         }
     }
 }

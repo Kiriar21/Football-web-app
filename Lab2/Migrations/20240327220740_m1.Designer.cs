@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lab2.Migrations
 {
     [DbContext(typeof(Database))]
-    [Migration("20240325115617_m1")]
+    [Migration("20240327220740_m1")]
     partial class m1
     {
         /// <inheritdoc />
@@ -245,26 +245,21 @@ namespace Lab2.Migrations
 
                     b.HasIndex("EventTypeId");
 
-                    b.HasIndex("MatchId");
-
-                    b.HasIndex("MatchPlayerId");
+                    b.HasIndex("MatchId", "MatchPlayerId");
 
                     b.ToTable("MatchEvents");
                 });
 
             modelBuilder.Entity("Lab2.Models.MatchPlayer", b =>
                 {
-                    b.Property<int>("MatchPlayerId")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("MatchId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MatchPlayerId"));
+                    b.Property<int>("MatchPlayerId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("EndTime")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("MatchId")
-                        .HasColumnType("int");
 
                     b.Property<int>("PlayerId")
                         .HasColumnType("int");
@@ -275,9 +270,7 @@ namespace Lab2.Migrations
                     b.Property<DateTime?>("StartTime")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("MatchPlayerId");
-
-                    b.HasIndex("MatchId");
+                    b.HasKey("MatchId", "MatchPlayerId");
 
                     b.HasIndex("PlayerId");
 
@@ -489,9 +482,10 @@ namespace Lab2.Migrations
 
                     b.HasOne("Lab2.Models.MatchPlayer", "MatchPlayer")
                         .WithMany("MatchEvents")
-                        .HasForeignKey("MatchPlayerId")
+                        .HasForeignKey("MatchId", "MatchPlayerId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("FK_MatchEvent_MatchPlayer");
 
                     b.Navigation("EventType");
 

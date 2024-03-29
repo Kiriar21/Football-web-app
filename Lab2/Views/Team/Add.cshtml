@@ -1,31 +1,28 @@
 ﻿@model Lab2.Models.Team
 
-@{
-}
-
-    <h1>Dodawanie nowej drużyny</h1>
-    <form asp-action="Added" method="post">
-        <p>
-            <label asp-for="Name">Nazwa</label>
-            <input asp-for="Name" type="text" name="Name" id="Name" />
-        </p>
-        <p>
-            <label asp-for="Country">Kraj</label>
-        <input type="text" asp-for="Country" name="Country" id="Country" />
-        </p>
-        <p>
-            <label asp-for="City">Miasto</label>
-        <input type="text" asp-for="City" name="City" id="City" />
-        </p>
-        <p>
-            <label asp-for="FoundingDate">Data utworzenia</label>
-            <input type="datetime-local" name="FoundingDate" id="FoundingDate" />
-        </p>
-        <p>
+<h1>Dodawanie nowej drużyny</h1>
+<form asp-action="Added" method="post">
+    <div class="form-group my-3">
+        <label asp-for="Name">Nazwa</label>
+        <input asp-for="Name" class="form-control" type="text" name="Name" id="Name" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="Country">Kraj</label>
+        <input asp-for="Country" class="form-control" type="text" name="Country" id="Country" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="City">Miasto</label>
+        <input asp-for="City" class="form-control" type="text" name="City" id="City" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="FoundingDate">Data utworzenia</label>
+        <input asp-for="FoundingDate" class="form-control" type="datetime-local" name="FoundingDate" id="FoundingDate" />
+    </div>
+    <div class="form-group my-3">
         <label asp-for="LeagueId">Wybierz Lige</label>
-        <select asp-for="LeagueId" asp-items="@ViewBag.leagues"></select>
-        </p>
-        <p>
-            <input type="submit" value="Dodaj druzyne" />
-        </p>
-    </form>
+        <select asp-for="LeagueId" class="form-control" asp-items="@ViewBag.leagues"></select>
+    </div>
+    <div class="text-center my-5">
+        <input type="submit" class="btn btn-success" value="Dodaj druzyne" />
+    </div>
+</form>

@@ -1,0 +1,15 @@
+﻿@model Lab2.Models.Article
+
+<h1>Usuwanie artykułu</h1>
+<form asp-action="Deleted" method="post">
+    <input asp-for="ArticleId" type="hidden" />
+
+    <div class="form-group my-3">
+        <p>Czy na pewno chcesz usunąć artyluł</p>
+        <p><strong>Tytuł: </strong>@Model.Title</p>
+        <p><strong>Autor: </strong>@Model.Author.FirstName @Model.Author.LastName</p>
+    </div>
+    <div class="text-center my-5">
+        <input class="btn btn-danger" type="submit" value="Usuń" />
+    </div>
+</form>

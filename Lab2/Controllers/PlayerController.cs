@@ -42,34 +42,25 @@ namespace Lab2.Controllers
         {
             Player player;
 
-            try
+          
+            if (int.TryParse(TeamId, out int parseTeamId) &&
+                _dbContext.Teams.FirstOrDefault(x => x.TeamId == parseTeamId) != null) 
             {
-              if(DateTime.TryParse(BirthDate, out DateTime parseBirthDate))
+                var positions = _dbContext.Positions.Where(x => Positions.Contains(x.PositionId)).ToList();
+                DateTime.TryParse(BirthDate, out DateTime parseBirthDate);
+                player = new()
                 {
-                    if (int.TryParse(TeamId, out int parseTeamId) &&
-                        _dbContext.Teams.FirstOrDefault(x => x.TeamId == parseTeamId) != null) 
-                    {
-                        var positions = _dbContext.Positions.Where(x => Positions.Contains(x.PositionId)).ToList();
+                    FIrstName = FIrstName,
+                    LastName = LastName,
+                    Country = Country,
+                    BirthDate = parseBirthDate,
+                    TeamId = parseTeamId,
+                    Positions = positions
+                };
 
-                        player = new()
-                        {
-                            FIrstName = FIrstName,
-                            LastName = LastName,
-                            Country = Country,
-                            BirthDate = parseBirthDate,
-                            TeamId = parseTeamId,
-                            Positions = positions
-                        };
-
-                        _dbContext.Players.Add(player);
-                        _dbContext.SaveChanges();
-                    }
-                }
-            } catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
+                _dbContext.Players.Add(player);
+                _dbContext.SaveChanges();
             }
-            // dodawanie danych 
             return RedirectToAction("Index");
         }
 
@@ -88,30 +79,16 @@ namespace Lab2.Controllers
                 }
                 ViewBag.Teams = teams;
 
-                var tempPlayer = _dbContext.Players.FirstOrDefault(x => x.PlayerId == PlayerId);
-                var tempPlayerPositions = tempPlayer!.Positions.ToList();
-
-                var tempPositions = _dbContext.Positions;
+                var tempPositions = _dbContext.Positions.ToList();
                 var positions = new List<SelectListItem>();
                 foreach (var position in tempPositions)
                 {
-                    string idPosition = position.PositionId.ToString();
+                    string id = position.PositionId.ToString();
                     string name = position.Name.ToString();
-                    var selectedItem = new SelectListItem(name, idPosition);
-                    selectedItem.Selected = true;
-
-                    //foreach(var pos in tempPlayerPositions)
-                    //{   
-                    //    if(pos.PositionId == position.PositionId)
-                    //    {
-                    //        selectedItem.Selected = true;
-
-                    //    }
-                    //}
-                    positions.Add(selectedItem);
+                    positions.Add(new SelectListItem(name, id));
                 }
-
                 ViewBag.Positions = positions;
+
                 return View(_dbContext.Players!.FirstOrDefault(x => x.PlayerId == PlayerId));
             } 
             else
@@ -121,25 +98,36 @@ namespace Lab2.Controllers
            
         }
         [HttpPost]
-        public IActionResult EditUpdate(Player player)
+        public IActionResult EditUpdate(Player player, List<int> Positions)
         {
             
             if(_dbContext.Players.Find(player.PlayerId) != null)
             {
                 var playerTemp = _dbContext.Players.FirstOrDefault(x => x.PlayerId == player.PlayerId);
+                var positions = _dbContext.Positions.Where(x => Positions.Contains(x.PositionId)).ToList();
 
-                if(playerTemp != null)
+                if (playerTemp != null)
                 {
                     playerTemp.FIrstName = player.FIrstName.ToString();
                     playerTemp.LastName = player.LastName.ToString();
                     playerTemp.BirthDate = player.BirthDate;
                     playerTemp.Country = player.Country.ToString();
                     playerTemp.TeamId = player.TeamId;
-                    playerTemp.Positions = player.Positions.ToList();
-                }
-                
-                _dbContext.SaveChanges();
 
+                    foreach (var newPosition in Positions)
+                    {
+                        foreach (var oldPosition in playerTemp.Positions)
+                        {
+                            if(newPosition != oldPosition.PositionId)
+                            {
+                                playerTemp.Positions.Remove(oldPosition);
+                            }
+                        }
+                    }
+
+                    playerTemp.Positions = positions;
+                    _dbContext.SaveChanges();
+                }
             }
 
             return RedirectToAction("Index");

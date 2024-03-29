@@ -1,18 +1,23 @@
 ﻿@model List<Lab2.Models.Team>
 
 <h1>Lista drużyn</h1>
-<a asp-controller="Team" asp-action="Add">Dodaj drużyne</a>
+<a class="btn btn-outline-success" asp-controller="Team" asp-action="Add">Dodaj drużyne</a>
 <p>
-    <ul>
+    <ul class="list-group list-group-flush">
         @foreach (var team in Model)
         {
-            <li>
-                Id: @team.TeamId
-                Nazwa: @team.Name
-                Kraj: @team.Country
-                Miasto: @team.City
-                Data utworzenia: @team.FoundingDate
-                Liga: @team.League.Name (@team.League.Country)
+            <li class="list-group-item list-group-item-dark my-5 w-100">
+                <p><strong>Nazwa: </strong>@team.Name</p>
+                <p><strong>Kraj: </strong>@team.Country</p>
+                <p><strong>Miasto: </strong>@team.City</p>
+                <p><strong>Data utworzenia: </strong>@team.FoundingDate</p>
+                <p><strong>Liga: </strong>@team.League.Name (@team.League.Country)</p>
+                <p>
+                    <a class="btn btn-outline-primary" asp-action="Edit" asp-controller="Team" asp-route-id=@team.TeamId >Edytuj</a>
+                </p>
+                <p>
+                    <a class="btn btn-warning" asp-action="ShowPlayers" asp-controller="Team" asp-route-id=@team.TeamId>Zobacz zawodników</a>
+                </p>
             </li>
         }
     </ul>

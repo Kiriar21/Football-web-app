@@ -1,0 +1,40 @@
+﻿@model Lab2.Models.Article
+
+<h1>Dodawanie nowego zawodnika</h1>
+<form asp-action="Added" asp-controller="Article" method="post">
+    <div class="form-group my-3">
+        <label asp-for="Title">Tytuł</label>
+        <input asp-for="Title" class="form-control" type="text" name="Title" id="Title" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="Lead">Wstęp</label>
+        <input asp-for="Lead" class="form-control" type="text" name="Lead" id="Lead" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="Content">Tekst artykułu</label>
+        <input asp-for="Content" class="form-control" type="text" name="Content" id="Content" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="AuthorId">Autor</label>
+        <select asp-for="AuthorId" class="form-control" asp-items="@ViewBag.ListAuthors"></select>
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="CategoryId">Kategoria</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.ListCategories"></select>
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="Tags">Tagi</label>
+        @{
+            foreach (var item in ViewBag.ListTags)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Tags" value="@item.Value" />
+                    <label class="form-check-label">@item.Text</label>
+                </div>
+            }
+        }
+    </div>
+    <div class="text-center my-5">
+        <input class="btn btn-success" type="submit" value="Dodaj artykuł" />
+    </div>
+</form>

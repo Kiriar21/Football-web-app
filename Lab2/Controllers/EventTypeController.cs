@@ -30,7 +30,7 @@ namespace Lab2.Controllers
             _dbContext.EventTypes.Add(eventType);
             _dbContext.SaveChanges();
 
-            return View(eventType);
+            return RedirectToAction("Index");
         }
     }
 }

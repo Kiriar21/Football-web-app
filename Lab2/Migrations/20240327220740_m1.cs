@@ -205,17 +205,16 @@ namespace Lab2.Migrations
                 name: "MatchPlayers",
                 columns: table => new
                 {
-                    MatchPlayerId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MatchPlayerId = table.Column<int>(type: "int", nullable: false),
+                    MatchId = table.Column<int>(type: "int", nullable: false),
                     StartTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     EndTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    MatchId = table.Column<int>(type: "int", nullable: false),
                     PositionId = table.Column<int>(type: "int", nullable: false),
                     PlayerId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MatchPlayers", x => x.MatchPlayerId);
+                    table.PrimaryKey("PK_MatchPlayers", x => new { x.MatchId, x.MatchPlayerId });
                     table.ForeignKey(
                         name: "FK_MatchPlayers_Matches_MatchId",
                         column: x => x.MatchId,
@@ -320,16 +319,16 @@ namespace Lab2.Migrations
                 {
                     table.PrimaryKey("PK_MatchEvents", x => x.MatchEventId);
                     table.ForeignKey(
+                        name: "FK_MatchEvent_MatchPlayer",
+                        columns: x => new { x.MatchId, x.MatchPlayerId },
+                        principalTable: "MatchPlayers",
+                        principalColumns: new[] { "MatchId", "MatchPlayerId" },
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_MatchEvents_EventTypes_EventTypeId",
                         column: x => x.EventTypeId,
                         principalTable: "EventTypes",
                         principalColumn: "EventTypeId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_MatchEvents_MatchPlayers_MatchPlayerId",
-                        column: x => x.MatchPlayerId,
-                        principalTable: "MatchPlayers",
-                        principalColumn: "MatchPlayerId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_MatchEvents_Matches_MatchId",
@@ -380,19 +379,9 @@ namespace Lab2.Migrations
                 column: "EventTypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MatchEvents_MatchId",
+                name: "IX_MatchEvents_MatchId_MatchPlayerId",
                 table: "MatchEvents",
-                column: "MatchId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MatchEvents_MatchPlayerId",
-                table: "MatchEvents",
-                column: "MatchPlayerId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MatchPlayers_MatchId",
-                table: "MatchPlayers",
-                column: "MatchId");
+                columns: new[] { "MatchId", "MatchPlayerId" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_MatchPlayers_PlayerId",
@@ -442,10 +431,10 @@ namespace Lab2.Migrations
                 name: "Articles");
 
             migrationBuilder.DropTable(
-                name: "EventTypes");
+                name: "MatchPlayers");
 
             migrationBuilder.DropTable(
-                name: "MatchPlayers");
+                name: "EventTypes");
 
             migrationBuilder.DropTable(
                 name: "Authors");

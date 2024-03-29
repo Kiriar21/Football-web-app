@@ -1,12 +1,10 @@
-﻿@{
-}
-<h1>Dodawanie nowego rodzaju wydarzenia </h1>
+﻿<h1>Dodawanie nowego rodzaju wydarzenia </h1>
 <form asp-controller="EventType" asp-action="Added" method="POST">
-    <p>
+    <div class="form-group my-3">
         <label for="Name">Nazwa rodzaju wydarzenia</label>
-        <input type="text" id="Name" name="Name" />
-    </p>
-    <p>
-        <input type="submit" value="Dodaj nowy typ wydarzenia" />
-    </p>
+        <input class="form-control" type="text" id="Name" name="Name" />
+    </div>
+    <div class="text-center my-5">
+        <input type="submit" class="btn btn-success" value="Dodaj nowy typ wydarzenia" />
+    </div>
 </form>

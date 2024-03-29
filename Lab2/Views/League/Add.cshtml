@@ -1,20 +1,18 @@
-﻿@{
-}
-<h1>Dodawanie nowej ligi</h1>
-<form asp-controller="League" asp-action="Added" method="POST">
-    <p>
+﻿<h1>Dodawanie nowej ligi</h1>
+<form asp-controller="League" asp-action="Added" method="post">
+    <div class="form-group my-3">
         <label for="Name">Nazwa Ligi</label>
-        <input type="text" id="Name" name="Name" />
-    </p>
-    <p>
+        <input type="text" class="form-control" id="Name" name="Name" />
+    </div>
+    <div class="form-group my-3">
         <label for="Country">Kraj</label>
-        <input type="text" id="Country" name="Country" />
-    </p>
-    <p>
+        <input type="text" class="form-control" id="Country" name="Country" />
+    </div>
+    <div class="form-group my-3">
         <label for="Level">Poziom ligi</label>
-        <input type="number" id="Level" name="Level" />
-    </p>
-    <p>
-        <input type="submit" value="Dodaj nowa lige" />
-    </p>
+        <input type="number" class="form-control" id="Level" name="Level" />
+    </div>
+    <div class="text-center my-5">
+        <input type="submit" class="btn btn-success" value="Dodaj nowa lige" />
+    </div>
 </form>

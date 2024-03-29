@@ -1,12 +1,10 @@
-﻿@{
-}
-<h1>Dodawanie nowego tagu</h1>
+﻿<h1>Dodawanie nowego tagu</h1>
 <form asp-controller="Tag" asp-action="Added" method="POST">
-    <p>
+    <div class="form-group my-3">
         <label for="Name">Nazwa tagu</label>
-        <input type="text" id="Name" name="Name" />
-    </p>
-    <p>
-        <input type="submit" value="Dodaj tag" />
-    </p>
+        <input type="text" class="form-control" id="Name" name="Name" />
+    </div>
+    <div class="text-center my-5">
+        <input type="submit" class="btn btn-success" value="Dodaj tag" />
+    </div>
 </form>

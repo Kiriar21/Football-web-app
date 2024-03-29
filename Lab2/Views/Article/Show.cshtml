@@ -1,0 +1,57 @@
+﻿@model Lab2.Models.Article
+
+<div class="text-center w-60">
+    <h1>@Model.Title</h1>
+    <p>@Model.CreationDate.ToShortDateString() @Model.Author.FirstName @Model.Author.LastName Kategoria: @Model.Category.Name </p>
+    <p>
+        <strong>Tagi:</strong>
+        @{
+            foreach (var tag in Model.Tags!)
+            {
+                var positionsString = $" | {@tag.Name} ";
+                @positionsString
+            }
+        }
+        |
+    </p>
+    <p class="w-50">
+        @Model.Content
+    </p>
+    <div class="text-center" style="display:flex; justify-content:center; flex-direction: column;">
+        <p class="fw-bold">Sekcja komentarzy</p>
+        <form asp-action="Added" asp-controller="Comment" method="post">
+            <input name="ArticleId" id="ArticleId" value="@Model.ArticleId" type="hidden" />
+            <div class="form-group text-center">
+                <label for="Title">Tytuł</label>
+                <input for="Title" class="form-control" id="Title" name="Title" />
+            </div>
+            <div class="form-group">
+                <label for="Content">Treść</label>
+                <input for="Content" class="form-control" id="Content" name="Content" />
+            </div>
+            <div class="text-center my-5">
+                <input type="submit" value="Dodaj komentarz" class="btn btn-success" />
+            </div>
+        </form>
+        <ul class="list-group list-group-flush">
+            @{
+                foreach (var item in ViewBag.Comments)
+                {
+                    <li class="list-group-item list-group-item-dark my-5">
+                    <p>
+                        <strong>Tytuł: </strong> @item.Title
+                    </p>
+                   <p>
+                        <strong>Treść: </strong> 
+                    </p>
+                    <p>
+                        @item.Content
+                    </p>
+                        <a class="btn btn-primary my-3" asp-controller="Comment" asp-action="Edit" asp-route-id=@item.CommentId>Edytuj</a>
+                        <a class="btn btn-danger my-3"  asp-controller="Comment" asp-action="Delete" asp-route-id=@item.CommentId asp-route-ArticleId=@Model.ArticleId>Usuń</a>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+</div>

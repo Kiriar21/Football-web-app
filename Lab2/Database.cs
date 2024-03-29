@@ -42,6 +42,16 @@ namespace Lab2
             .WithMany(t => t.AwayMatches)
             .HasForeignKey(m => m.AwayTeamId)
             .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<MatchPlayer>()
+            .HasKey(mp => new { mp.MatchId, mp.MatchPlayerId });
+
+            modelBuilder.Entity<MatchEvent>()
+            .HasOne(me => me.MatchPlayer)
+            .WithMany(mp => mp.MatchEvents)
+            .HasForeignKey(me => new { me.MatchId, me.MatchPlayerId })
+            .HasConstraintName("FK_MatchEvent_MatchPlayer")
+            .IsRequired();
         }
     }
 }

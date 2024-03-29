@@ -1,0 +1,29 @@
+﻿@model Lab2.Models.Team
+
+<h1>Aktualizacja drużyny</h1>
+<form asp-action="Edit" method="post">
+    <input asp-for="TeamId" type="hidden" />
+    <div class="form-group my-3">
+        <label asp-for="Name">Nazwa</label>
+        <input asp-for="Name" class="form-control" type="text" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="Country">Kraj</label>
+        <input asp-for="Country" class="form-control" type="text" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="City">Miasto</label>
+        <input asp-for="City" class="form-control" type="text" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="FoundingDate">Data utworzenia</label>
+        <input asp-for="FoundingDate" class="form-control" type="datetime-local" />
+    </div>
+    <div class="form-group my-3">
+        <label asp-for="LeagueId">Wybierz Lige</label>
+        <select asp-for="LeagueId" class="form-control" asp-items="@ViewBag.Teams"></select>
+    </div>
+    <div class="text-center my-5">
+        <input class="btn btn-success" type="submit" value="Aktualizuj druzyne" />
+    </div>
+</form>
